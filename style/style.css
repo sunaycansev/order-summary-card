@@ -63,7 +63,7 @@ body {
   align-items: center;
   border-radius: 10px;
   padding: 20px;
-  margin: 0 20px 32px;
+  margin: 0 35px 32px;
   background-color: var(--gray);
 }
 
@@ -99,8 +99,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 35px;
+  padding-left: 35px;
   /*padding-bottom: 48px;*/
 }
 
@@ -114,6 +114,9 @@ body {
   color: #fff;
   box-shadow: 0px 20px 20px rgb(56 42 225 / 19%);
 }
+.card-wrapper .card-footer__submit:hover {
+  cursor: pointer;
+}
 .card-wrapper .card-footer__cancel {
   width: 100%;
   margin: 32px 0 40px 0;
@@ -121,7 +124,30 @@ body {
   border-radius: 17px;
   border: none;
   color: #717fa6;
-  background-color: var(--very-pale-blue);
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #fff;
+}
+.card-wrapper .card-footer__cancel:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 475px) {
+  .card-wrapper {
+    width: 350px;
+    height: 710px;
+  }
+  .card-wrapper .card-top img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 355px) {
+  .card-wrapper {
+    width: 300px;
+    height: 710px;
+  }
+  .card-wrapper .card-top img {
+    width: 100%;
+  }
 }
