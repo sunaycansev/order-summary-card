@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --gray: #f7f9ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-wrapper {
+  width: 450px;
+  height: 710px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.card-wrapper .card-top {
+}
+
+.card-wrapper .card-top img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-bottom: 35px;
+}
+
+.card-wrapper .card-body {
+}
+
+.card-wrapper .card-body .card-body__title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.card-wrapper .card-body .card-body__text {
+  text-align: center;
+  padding-right: 48px;
+  padding-left: 48px;
+  margin-bottom: 30px;
+}
+
+.card-wrapper .card-body .card-body__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 20px 32px;
+  background-color: var(--gray);
+}
+
+.card-wrapper .card-body .card-body__info img {
+}
+
+.card-wrapper .card-body .card-body__info .card-body__info__center {
+}
+.card-wrapper
+  .card-body
+  .card-body__info
+  .card-body__info__center
+  .card-body__info__center__title {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.card-wrapper
+  .card-body
+  .card-body__info
+  .card-body__info__center
+  .card-body__info__center__price {
+  color: var(--desaturated-blue);
+}
+
+.card-wrapper .card-body .card-body__info .card-body__info__center__link {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.card-wrapper .card-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  /*padding-bottom: 48px;*/
+}
+
+.card-wrapper .card-footer__submit {
+  width: 100%;
+  padding: 15px 102px;
+  border-radius: 17px;
+  border: none;
+  background-color: var(--bright-blue);
+  font-size: 18px;
+  color: #fff;
+  box-shadow: 0px 20px 20px rgb(56 42 225 / 19%);
+}
+.card-wrapper .card-footer__cancel {
+  width: 100%;
+  margin: 32px 0 40px 0;
+  padding: 15px 102px;
+  border-radius: 17px;
+  border: none;
+  color: #717fa6;
+  background-color: var(--very-pale-blue);
+  font-weight: 500;
+  font-size: 16px;
+}
